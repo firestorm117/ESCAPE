@@ -12,7 +12,7 @@ public class DoorInteraction : MonoBehaviour, IInteractableObject
 
     public void action()
     {
-        if (requiresKeycard)
+        if(requiresKeycard)
         {
             if (InventoryManager.im.isInInventory(key))
                 activated = true;
